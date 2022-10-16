@@ -603,7 +603,6 @@ html, body {
 }
 .controlls__arrows {
   margin: 0px 0px 30px 0px;
-  cursor: pointer;
 }
 .controlls__arrows > * {
   display: inline-block;
@@ -647,6 +646,12 @@ html, body {
 @media (max-width: 1600px) {
   .info::before {
     width: 310px;
+  }
+}
+@media (max-width: 560px) {
+  .info::before {
+    width: 100%;
+    left: -300px;
   }
 }
 @media (max-width: 1600px) {
@@ -1479,6 +1484,15 @@ html, body {
   }
   .buing__buttons > * {
     margin: 0px 30px 30px 0px;
+  }
+}
+@media (max-width: 450px) {
+  .buing__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buing__buttons > * {
+    margin: 0px 0px 30px 0px;
   }
 }
 .buing__gradient {
