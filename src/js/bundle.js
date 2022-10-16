@@ -64,8 +64,8 @@ function manufacturySlider() {
       slidesToScroll: 1,
       slidesToShow: 2,
       variableWidth: true,
-      prevArrow: $('.manufactury__controls-prew-arrow'),
-      nextArrow: $('.manufactury__controls-next-arrow'),
+      prevArrow: $('.manufactury__controls-prew-arrow-img'),
+      nextArrow: $('.manufactury__controls-next-arrow-img'),
       responsive: [{
         breakpoint: 1200,
         settings: {
@@ -128,8 +128,8 @@ function productSlider() {
       slidesToScroll: 1,
       slidesToShow: 1,
       variableWidth: true,
-      prevArrow: $('.controlls__prew-arrow'),
-      nextArrow: $('.controlls__next-arrow'),
+      prevArrow: $('.controlls__prew-arrow-img'),
+      nextArrow: $('.controlls__next-arrow-img'),
       responsive: [{
         breakpoint: 1224,
         settings: {
