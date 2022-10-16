@@ -1,0 +1,260 @@
+
+.header {
+      position: relative;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 28px 0px 0px 0px;
+
+
+   }
+
+   &__container {
+
+   }
+
+   &__logo {
+      @media (max-width:830px) {
+         img {
+            width: 135px;
+            height: 25px;
+         }
+      }
+   }
+
+   &__right-bar {
+      display: flex;
+      align-items: center;
+      &>*:not(:last-child){
+         margin: 0px 50px 0px 0px;
+      }
+      @media (max-width: 830px) {
+         &>*:not(:last-child){
+            margin: 0px 12px 0px 0px;
+         }
+      }
+   }
+
+   &__search {
+   }
+
+   &__location {
+   }
+
+   &__burger-trigger {
+      z-index: 50;
+      @media (max-width:830px) {
+         img {
+            width: 33px;
+            height: 21px;
+         }
+      }
+   }
+}
+
+
+.logo {
+   &__img {
+   }
+}
+.search {
+   // width: 310px;
+   &__inner {
+   }
+
+   &__form {
+      position: relative;
+      // width: 300px;
+      margin: 0 auto;
+      height: 42px;
+
+   }
+
+   &__input {
+      height: 42px;
+      width: 0;
+      padding: 0 42px 0 15px;
+      border: none;
+      border-bottom: 2px solid transparent;
+      outline: none;
+      background: transparent;
+      transition: .7s cubic-bezier(0, 0.8, 0, 1);
+      position: absolute;
+      top: 0;
+      right: 60px;
+      z-index: 2;
+      @media (max-width:830px) {
+         right: 30px;
+      }
+   }
+
+   &__button {
+      background: white;
+      border: none;
+      height: 42px;
+      width: 42px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      @media (max-width:830px) {
+         height: 24px;
+         width: 24px;
+      }
+
+      &::before {
+         content: "";
+         background-image: url(/src/img/header/search.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         background-size: 44px;
+         width: 48px;
+         height: 48px;
+         top: 0px;
+         right: 0px;
+         @media (max-width:830px) {
+            width: 24px;
+            height: 24px;
+            background-size: 24px;
+            top: 10px;
+            right: -5px;
+         }
+      }
+   }
+}
+.location {
+   &__logo {
+      @media (max-width:830px) {
+         img {
+            width: 21px;
+            height: 25px;
+         }
+      }
+   }
+}
+
+
+.burger-trigger {
+}
+
+.header__hide {
+   width: 230px;
+   z-index: 1;
+   border-bottom: 2px solid $font_color_dark;
+   @media (max-width: 830px) {
+      width: 150px;
+   }   
+}
+
+
+.menu {
+   width: 100%;
+   height: 914px;
+   background-color: $font_color_light;
+   position: absolute;
+   top: -1000px;
+   left: 0;
+   z-index: 15;
+
+   @media (max-width: 1000px) {
+   height: 800px;
+   }
+
+   &__logo {
+      margin: 30px 0px 0px 20%;
+   }
+   
+   &__list {
+      margin: 204px 0px 0px 20%;
+      &>*:not(:last-child){
+         margin: 0px 0px 30px 0px;
+      }
+
+      @media (max-width: 1000px) {
+         margin: 50px 0px 0px 20%;
+      }
+   }
+
+   &__item {
+      a{
+         background-color: #fff;
+         width: 190px;
+      }
+
+   }
+
+   &__link {
+   }
+
+   &__span {
+      z-index: -5;
+   }
+
+   &__span-one {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      img {
+         width: 100%;
+      }    
+   }
+
+		&__span-two {
+         position: absolute;
+         top: 400px;
+         left: 0;
+         width: 100%;
+         img {
+            width: 100%;
+         }    
+		}
+
+		&__span-three {
+         position: absolute;
+         top: 330px;
+         left: 0;
+         width: 100%;
+         img {
+            width: 100%;
+         }    
+		}
+
+		&__span-four {
+         position: absolute;
+         top: 540px;
+         left: 0;
+         width: 100%;
+         img {
+            width: 100%;
+         }    
+		}
+
+		&__span-five {
+         position: absolute;
+         top: 540px;
+         left: 0;
+         width: 100%;
+         img {
+            width: 100%;
+         }    
+		}
+}
+
+
+
+._active {
+   position: absolute;
+   top: 0px;
+   left: 0;
+}
+
+._active-trigger {
+   
+}
+
+.logo-hide {
+   visibility: hidden;
+   transition: none;
+}

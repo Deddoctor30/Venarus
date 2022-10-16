@@ -1,0 +1,297 @@
+
+.medicine {
+   margin: 101px 0px 0px 0px;
+   &__container {
+   }
+
+   &__inner {
+   }
+
+   &__info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media (max-width:950px) {
+         justify-content: center;
+      }
+
+      @include style(0.88rem, 154.8%, #000000, 0.01em);
+
+      font-family: 'Merriweather';
+      font-weight: 700;
+   }
+
+   &__effect {
+      position: relative;
+      flex: 0 1 165px;
+      margin: 0px 0px 0px 97px;
+      padding: 0px 20px 0px 0px;
+      @media (max-width:950px) {
+         flex: 0 1 30%;
+      }
+
+      &::before {
+         content: "";
+         background-image: url(/src/img/medicine/effect.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 67px;
+         height: 67px;
+         top: -12px;
+         left: -97px;
+      }
+   }
+
+   &__dosage {
+      position: relative;
+      flex: 0 1 166px;
+      margin: 0px 0px 0px 97px;
+      @media (max-width:950px) {
+         // flex: 0 1 30%;
+      }
+
+      @media (max-width:551px) {
+         margin: 100px 0px 0px 97px;
+         // flex: 0 1 100%;
+      }
+
+      &::before {
+         content: "";
+         background-image: url(/src/img/medicine/dosa.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 70px;
+         height: 60px;
+         top: -8px;
+         left: -97px;
+      }
+   }
+
+   &__intake {
+      position: relative;
+      flex: 0 1 263px;
+      margin: 0px 0px 0px 97px;
+      @media (max-width:950px) {
+         margin: 50px 0px 0px 97px;
+      }
+      @media (max-width:551px) {
+         margin: 100px 0px 0px 97px;
+      }
+
+      &::before {
+         content: "";
+         background-image: url(/src/img/medicine/01.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 70px;
+         height: 60px;
+         top: -4px;
+         left: -97px;
+      }
+
+      
+   }
+
+   &__tooltip {
+      position: relative;
+      &::after {
+         content: attr(data-tooltip);
+         background-color: $font_color_light;
+         width: 220px;
+         height: 100px;
+         border-radius: 20px;
+         position: absolute;
+         top: 0;
+         left: 60px;
+         opacity: 0;
+         visibility: hidden;
+         z-index: 10;
+         transition: all 0.4s ease-in-out;
+         color: rgb(0, 0, 0);
+         padding: 12px;
+         @media (max-width: 1630px) {
+            top: 40px;
+            left: -140px;
+         }
+
+         @include style(0.88, 154.8%, black, 0.01em);
+
+         font-family: 'Merriweather';
+         font-weight: 700;
+
+         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      }
+
+      &:hover::after {
+         opacity: 1; /* Показываем его */
+         visibility: visible;
+      }
+
+      &::before {
+         content: "";
+         background-image: url(/src/img/medicine/information.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 30px;
+         height: 30px;
+         top: -3px;
+         left: 8px;
+      }
+   }
+
+   &__helpfulness {
+   }
+}
+
+.helpfulness {
+   margin: 128px 0px 0px 0px;
+   
+   display: flex;
+   @media (max-width:955px) {
+      flex-direction: column;
+   }
+
+   &__text {
+      flex: 0 1 263px;
+      margin: 0px 29px 0px 0px;
+      @media (max-width:955px) {
+         flex: 0 1 100%;
+         margin: 0px 0px 20px 0px;
+      }
+   }
+
+   &__items {
+      flex: 1 1 100px;
+   }
+
+   &__item {
+      position: relative;
+      min-height: 194px;
+
+      display: flex;
+      align-items: center;
+
+      // z-index: -10;
+
+      border-top: 2px solid $font_color_dark3;
+      &:last-child {
+         border-bottom: 2px solid $font_color_dark3;
+      }
+
+      span {
+         @include style(1rem, 116%, $font_color_dark, 0.01em);
+
+         text-decoration-line: underline;
+         position: absolute;
+         bottom: 32px;
+         left: 0;
+      }
+   }
+
+   &__label {
+      margin: 0px 0px 0px 293px;
+      width: 360px;
+      @media (max-width:676px) {
+         margin: 0px 0px 0px 0px;
+      }
+
+
+      @include style(1.66rem, 100%, black, 0.01em);
+      font-weight: 300;
+   }
+
+   &__img {
+      position: absolute;
+      z-index: 50;
+   }
+
+   &__img-01 {
+      z-index: 5;
+      top: 25px;
+      left: 120px;
+      transition: transform 1s ease;
+      &:hover {
+         transform: rotate(120deg);
+      }
+      @media (max-width:676px) {
+         top: 20px;
+         right: 0px;
+         left: inherit;
+      }
+      @media (max-width:400px) {
+         display: none;
+      }
+   }
+   &__img-02 {
+      z-index: 5;
+      top: 20px;
+      right: 0px;
+      &:hover {
+         transform: skew(-20deg, 20deg);
+      }
+      @media (max-width:400px) {
+         display: none;
+      }
+   }
+   
+   &__img-03 {
+      z-index: 5;
+      top: -20px;
+      left: 70px;
+      &:hover {
+         transform: scale(.8);
+      }
+      @media (max-width:676px) {
+         top: 20px;
+         right: 0px;
+         left: inherit;
+      }
+      @media (max-width:400px) {
+         display: none;
+      }
+   }
+   &__img-04 {
+      z-index: 5;
+      top: 90px;
+      right: 30px;
+      &:hover {
+         transform: translateY(-30px);
+      }
+      @media (max-width:676px) {
+         top: 20px;
+         right: 0px;
+         left: inherit;
+      }
+      @media (max-width:400px) {
+         display: none;
+      }
+   }
+   &__img-05 {
+      top: 80px;
+      left: 120px;
+      &:hover {
+         transform: scaleX(1.2);
+      }
+      @media (max-width:676px) {
+         top: 20px;
+         right: 0px;
+         left: inherit;
+      }
+      @media (max-width:400px) {
+         display: none;
+      }
+   }
+}
+
+.text {
+   @include style(1.66rem, 120%, black, 0.01em);
+
+   font-family: 'Merriweather';
+   font-weight: 700;
+   p {
+      margin: 38px 0px 0px 0px;
+      font-family: "roboto";
+      font-weight: 400;
+      @include style(0.88rem, 154.8%, #777777, 0.01em);
+   }
+}
