@@ -137,6 +137,12 @@ html, body {
   font-weight: 400;
   cursor: pointer;
 }
+@media (max-width: 700px) {
+  .btn {
+    width: 163px;
+    height: 47px;
+  }
+}
 .btn_white {
   background-color: #FFFFFF;
   color: #590D56;
@@ -542,6 +548,19 @@ html, body {
   font-weight: 300;
   text-transform: uppercase;
 }
+@media (max-width: 1600px) {
+  .product__breaking-news {
+    margin: 1000px 0px 0px 0px;
+  }
+}
+@media (max-width: 700px) {
+  .product__breaking-news {
+    font-size: 1.66rem;
+    line-height: 100%;
+    color: #590D56;
+    letter-spacing: 0.01em;
+  }
+}
 .product__breaking-news::before {
   content: "";
   position: absolute;
@@ -559,6 +578,11 @@ html, body {
   top: 60px;
   left: 0px;
   background-color: #47093E;
+}
+@media (max-width: 700px) {
+  .product__breaking-news::after {
+    top: 40px;
+  }
 }
 
 .controlls {
@@ -621,15 +645,21 @@ html, body {
   opacity: 0.8;
 }
 @media (max-width: 1600px) {
+  .info::before {
+    width: 310px;
+  }
+}
+@media (max-width: 1600px) {
   .info {
     top: 700px;
-    right: -50%;
+    right: -40%;
     transform: translate(50%, 0%);
   }
 }
 @media (max-width: 980px) {
   .info {
     top: 650px;
+    right: -50%;
   }
 }
 .info > *:not(:last-child) {
@@ -851,6 +881,11 @@ html, body {
   bottom: 32px;
   left: 0;
 }
+@media (max-width: 700px) {
+  .helpfulness__item span {
+    bottom: 20px;
+  }
+}
 .helpfulness__label {
   margin: 0px 0px 0px 293px;
   width: 360px;
@@ -863,6 +898,10 @@ html, body {
 @media (max-width: 676px) {
   .helpfulness__label {
     margin: 0px 0px 0px 0px;
+    font-size: 1.22rem;
+    line-height: 100%;
+    color: black;
+    letter-spacing: 0.01em;
   }
 }
 .helpfulness__img {
@@ -985,6 +1024,11 @@ html, body {
   margin: 300px 0px 0px 0px;
   position: relative;
 }
+@media (max-width: 900px) {
+  .manufactury {
+    margin: 200px 0px 0px 0px;
+  }
+}
 .manufactury__bg {
   background: url(../img/manufactory/manufactury_bg.png);
   background-size: 100% 100%;
@@ -1009,6 +1053,11 @@ html, body {
 }
 .manufactury__wrapper {
   display: flex;
+}
+@media (max-width: 1100px) {
+  .manufactury__wrapper {
+    justify-content: center;
+  }
 }
 @media (max-width: 820px) {
   .manufactury__wrapper {
@@ -1392,6 +1441,13 @@ html, body {
   text-align: center;
   position: relative;
 }
+@media (max-width: 608px) {
+  .buing__content {
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 70% 0px;
+    width: 100%;
+  }
+}
 .buing__content img {
   width: 100%;
   height: 100%;
@@ -1402,6 +1458,11 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
+}
+@media (max-width: 608px) {
+  .buing__content img {
+    left: -30px;
+  }
 }
 .buing__buttons {
   display: flex;

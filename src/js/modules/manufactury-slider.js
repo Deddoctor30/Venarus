@@ -17,6 +17,12 @@ function manufacturySlider() {
                arrows: false,
              }
            },
+           {
+             breakpoint: 1100,
+             settings: {
+              slidesToShow: 1,
+             }
+           },
          ]
        });
    }

@@ -9,10 +9,10 @@ const burger = () => {
       trigger.classList.toggle('_active-trigger');
       if (burgerTrigger.getAttribute("src") === "./img/header/burger__full.png") {
             burgerTrigger.setAttribute("src", "./img/header/burger__half.png");
-            document.body.style.overflow = 'hidden';
+            // document.body.style.overflow = 'hidden';
       } else {
          burgerTrigger.setAttribute("src", "./img/header/burger__full.png");
-         document.body.style.overflow = '';
+         // document.body.style.overflow = '';
       }
       bg.classList.toggle('wrapper-background');
    }

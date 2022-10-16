@@ -125,6 +125,11 @@ $modal_bg_color: #FFFFFF;
    // border: 1px solid #FFFFFF;
    cursor: pointer;
 
+   @media (max-width: 700px) {
+      width: 163px;
+      height: 47px;
+   }
+
    &_white {
       background-color: $button_color_light;
       color: $font_color_dark;
