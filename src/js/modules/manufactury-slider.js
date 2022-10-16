@@ -8,8 +8,8 @@ function manufacturySlider() {
          slidesToScroll: 1,
          slidesToShow: 2,
          variableWidth: true,
-         prevArrow: $('.manufactury__controls-prew-arrow'),
-         nextArrow: $('.manufactury__controls-next-arrow'),
+         prevArrow: $('.manufactury__controls-prew-arrow-img'),
+         nextArrow: $('.manufactury__controls-next-arrow-img'),
          responsive: [
            {
              breakpoint: 1200,
