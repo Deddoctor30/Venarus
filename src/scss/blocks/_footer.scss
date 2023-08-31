@@ -1,17 +1,11 @@
 
 .footer {
    margin: 30px 0px 24px 0px;
-
    &__title {
       @include style(1.72rem, 100%, $font_color_dark2, 0.04em);
-
       opacity: 0.8;
       text-align: center;
    }
-
-   &__container {
-   }
-
    &__inner {
       display: flex;
       margin: 50px 0px 0px 0px;
@@ -24,33 +18,19 @@
          row-gap: 50px;
       }
    }
-
-   &__top {
-   }
-
    &__report {
       flex: 0 1 30%;
    }
-
    &__info {
       display: flex;
       flex-direction: column;
       flex: 0 1 30%;
    }
-
-   &__cookies {
-   }
-
    &__address {
       @include style(0.77rem, 130%, #828282, 0.01em);
-
       margin: 35px 0px 0px 0px;
    }
-
-   &__media {
-   }
 }
-
 .media {
    display: flex;
    flex-direction: column;

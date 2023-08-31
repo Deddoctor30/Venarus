@@ -26,11 +26,8 @@ function manufacturySlider() {
          ]
        });
    }
-   
-
    const prevArrow = document.querySelector(".manufactury__controls-prew-arrow"),
          nextArrow = document.querySelector(".manufactury__controls-next-arrow");
-  
   currentChanger();
   prevArrow.addEventListener('click', () => {
     currentChanger();
@@ -38,8 +35,6 @@ function manufacturySlider() {
   nextArrow.addEventListener('click', () => {
     currentChanger();
   });
-
-  
    function currentChanger() {
     document.querySelectorAll(".manufactury__item").forEach(item => {
       if (item.classList.contains('slick-current')) {
@@ -55,9 +50,6 @@ function manufacturySlider() {
       }
      })
    }
-
-
-
 }
 
 export default manufacturySlider;

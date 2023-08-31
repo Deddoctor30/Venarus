@@ -1,14 +1,5 @@
 .main {
    position: relative;
-
-   &__container {
-   }
-
-   &__inner {
-   }
-
-
-
    &__title {
       margin: 68px 0px 0px 0px;
       width: 360px;
@@ -23,10 +14,6 @@
          width: 292px;
       }
    }
-
-   &__product {
-   }
-
    &__bg {
       width: 4800px;
       height: 100%;
@@ -39,7 +26,6 @@
       animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
       transform: translate3d(0, 0, 0);
    }
-
    @keyframes wave {
       0% {
         left: 0;
@@ -48,21 +34,16 @@
         left: -2880px;
       }
     }
-
-   
 }
-
 .product {
    position: absolute;
    top: 220px;
    right: 17%;
-
    @media (max-width:980px) {
       top: 200px;
       right: 50%;
       transform: translate(50%, 0%);
    }
-
    &__slider {
       position: relative;
       width: 938px;
@@ -72,7 +53,6 @@
          height: 290px;
       }
    }
-
    &__item {
       width: 938px;
       height: 490px;
@@ -89,13 +69,6 @@
          }
       }
    }
-
-   &__controlls {
-   }
-
-   &__info {
-   }
-
    &__breaking-news {
       margin: 900px 0px 0px 0px;
       position: relative;
@@ -134,26 +107,21 @@
       }
    }
 }
-
 .controlls {
    position: absolute;
    top: 470px;
    right: 250px;
-
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
-
    @media (max-width:980px) {
       top: 370px;
       right: 50%;
       transform: translate(50%, 0%);
    }
-
    &__arrows {
       margin: 0px 0px 30px 0px;
-
       &>*{
          display: inline-block;
          border-radius: 50%;
@@ -165,21 +133,15 @@
          margin: 0px 30px 0px 0px;
       }
    }
-
    &__prew-arrow {
       border-radius: 50%;
       border: 1px solid $button_color_dark;
    }
-
    &__next-arrow {
       border-radius: 50%;
       border: 1px solid $button_color_dark;
    }
-
-   &__cover {
-   }
 }
-
 .info {
    position: absolute;
    top: 400px;
@@ -196,32 +158,25 @@
       @media (max-width:1600px) {
          width: 310px;
       }
-
       @media (max-width:560px) {
          width: 100%;
          left: -300px;
       }
    }
-
    @media (max-width:1600px) {
       top: 700px;
       right: -40%;
       transform: translate(50%, 0%);
    }
-
    @media (max-width:980px) {
       top: 650px;
       right: -50%;
    }
-
-
    @include style(1rem, 116%, $font_color_dark, 0.01em);
    text-decoration-line: underline;
-
    &>*:not(:last-child){
       margin: 0px 0px 76px 0px;
    }
-
    &__schema {
       position: relative;
       &::before {
@@ -236,7 +191,6 @@
          cursor: pointer;
       }
    }
-
    &__instruction {
       position: relative;
       &::before {
@@ -251,7 +205,6 @@
          cursor: pointer;
       }
    }
-
    &__purchase {
       position: relative;
       &::before {
@@ -265,7 +218,5 @@
          left: -97px;
          cursor: pointer;
       }
-   }
-   &__inner {
    }
 }
